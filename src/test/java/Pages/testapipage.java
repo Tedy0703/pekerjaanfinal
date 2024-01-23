@@ -2,6 +2,7 @@ package Pages;
 
 import helper.Endpoint;
 import helper.Utility;
+import helper.Models;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
@@ -11,6 +12,7 @@ import java.util.List;
 
 import static helper.Models.getListUsers;
 //import static org.hamcrest.MatcherAssert.assertThat;
+import static helper.Models.postCreateUsers;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class testapipage {
@@ -38,6 +40,11 @@ public class testapipage {
     }
     public void hitApiGetListUsers() {
         res = getListUsers(setURL);
+//        System.out.println(res.getBody().asString());
+
+    }
+    public void hitApiPostCreateUsers() {
+        res = postCreateUsers(setURL);
         System.out.println(res.getBody().asString());
 
     }

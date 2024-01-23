@@ -18,10 +18,9 @@ public class testapi {
 
 
 
-    @Given("prepare url valid for {string}")
-    public void prepareUrlValidFor(String url) {
-        testapiPage.prepareUrlValidFor(url);
-        
+@Given("prepare url valid for {string}")
+public void prepareUrlValidFor(String url) {
+testapiPage.prepareUrlValidFor(url);
     }
 
     @And("hit api get list users")
@@ -47,5 +46,12 @@ public class testapi {
     public void validationResponseJsonWithJSONSchema(String filename) {
         testapiPage.validationResponseJsonWithJSONSchema(filename);
 //        System.out.println("step 5");
+    }
+
+
+    @And("hit api get create users")
+    public void hitApiGetCreateUsers() {
+        testapiPage.hitApiPostCreateUsers();
+
     }
 }
