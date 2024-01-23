@@ -12,7 +12,7 @@ public class Utility {
         String allowedChars = "abcdefghijklmnopqrstuwvxyz" + "1234567890" + "_-.";
         String email ="";
         String temp = RandomStringUtils.randomAlphanumeric(10); // panjang karakter untuk email
-        email = temp + "testdata.com";
+        email = temp + "@testdata.com";
         return email;
     }
 }
