@@ -1,25 +1,33 @@
 package stepDef;
 
 import io.cucumber.java.*;
+
+import static helper.Utility.quitDriver;
+import static helper.Utility.startDriver;
+
 public class Hooks {
 
-//    @BeforeAll
-//    public static void setUp() {
-//        System.out.println("Before All");
-//    }
-//
-//    @AfterAll
-//    public static void tearDown() {
-//        System.out.println("After All");
-//    }
-//
-//    @Before
-//    public static void beforetest() {
-//        System.out.println("Before All");
-//    }
-//
-//    @After
-//    public static void aftertest() {
-//        System.out.println("Before All");
-//    }
+  @BeforeAll
+public static void setUp() {
+
+
+    }
+
+    @AfterAll
+    public static void tearDown() {
+
+
+    }
+
+    @Before
+    public void beforeTest() {
+
+        startDriver();
+            }
+
+    @After
+    public void afterTest() throws InterruptedException {
+    Thread.sleep(3000);
+      quitDriver();
+    }
 }

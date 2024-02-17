@@ -54,4 +54,25 @@ testapiPage.prepareUrlValidFor(url);
         testapiPage.hitApiPostCreateUsers();
 
     }
+
+    @Then("validation response body post create new user")
+    public void validationResponseBodyPostCreateNewUser() {
+        testapiPage.validationResponseBodyCreateUser();
+    }
+
+    @And("hit api delete now")
+    public void hitApiDeleteNow() {
+        testapiPage.hitApiDeleteUsers();
+
+    }
+
+    @And("hit api update data")
+    public void hitApiUpdateData() {
+        testapiPage.hitApiUpdateUsers();
+        
+    }
+
+    @Then("validation response body update user")
+    public void validationResponseBodyUpdateUser() {
+    }
 }
