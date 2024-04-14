@@ -4,7 +4,7 @@ import io.cucumber.java.*;
 
 import java.util.Objects;
 
-import static helper.Utility.quitDriver;
+//import static helper.Utility.quitDriver;
 import static helper.Utility.startDriver;
 
 public class Hooks {
@@ -39,7 +39,7 @@ public class Hooks {
         System.out.println("After Test");
 
         if (Objects.equals(tagsRunning, "@web")) {
-            quitDriver();
+//            quitDriver();
         }
     }
 }

@@ -71,7 +71,7 @@ Feature: Test Automation Web
 
 
   @web
-  Scenario: Test login web add to cart
+  Scenario: Test login web add to cart with verification remove
     Given open web login page
     And user input username"standard_user"
     And user input password"secret_sauce"
