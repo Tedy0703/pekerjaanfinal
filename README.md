@@ -5,8 +5,11 @@
 - Verifikasi item cart yang diinput
 - Verifikasi jumlah item
 ![image](https://github.com/Tedy0703/pekerjaanfinal/assets/109749529/0e76b7b3-3ff2-4eff-b5cc-98b3b7c1cb1e)
+
+
 2. Implementasi page object model
 ![image](https://github.com/Tedy0703/pekerjaanfinal/assets/109749529/6dc53fa1-b67f-468b-8c26-657954845da5)
+
 3. Flow
 - Untuk menjalankan test @web secara umum harus mempersiapkan hooks untuk langkah sebelum atau sesudah dilakukan test, web feature/cucumber skenario yang mana akan dijalankan dalam test web tersebut.
 Halaman webpage dan webstep, berhubungan yang mana webpage berisikan detail step yang akan dipanggil di webstep dan dijalankan pada skenario cucumber.
