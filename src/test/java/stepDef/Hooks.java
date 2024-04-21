@@ -39,7 +39,7 @@ public class Hooks {
         System.out.println("After Test");
 
         if (Objects.equals(tagsRunning, "@web")) {
-//            quitDriver();
+            quitDriver();
         }
     }
 }
